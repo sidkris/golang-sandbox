@@ -20,4 +20,8 @@ func main() {
 
 	initials := fmt.Sprintf("First Initial : %c | Last Initial : %c", firstInitial, lastInitial)
 	fmt.Println(initials)
+
+	var ageInDays int
+	ageInDays = 365 * 30 // assuming age to be 30 years and no leap years
+	fmt.Println("Age in days :", ageInDays)
 }
