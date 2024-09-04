@@ -19,13 +19,10 @@ func main() {
 	die1 := rollDie(r)
 	die2 := rollDie(r)
 
-	// Calculate the total
 	total := die1 + die2
 
-	// Output the result of the roll
 	fmt.Printf("You rolled a %d and a %d, for a total of %d\n", die1, die2, total)
 
-	// Evaluate the result based on the total
 	switch total {
 	case 2:
 		fmt.Println("Snake eyes!")
