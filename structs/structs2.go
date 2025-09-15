@@ -14,7 +14,7 @@ type Bus struct {
 
 func main() {
 	casey := Passenger{Name: "Casey", TicketNumber: 1, Boarded: true}
-	bill := Passenger{Name: "Bill", TicketNumber: 2, Boarded: false}
+	bill := Passenger{Name: "Bill", TicketNumber: 2, Boarded: true}
 	marie := Passenger{Name: "Marie", TicketNumber: 3, Boarded: false}
 	fmt.Println(casey, bill, marie)
 
@@ -29,4 +29,7 @@ func main() {
 	if marie.Boarded {
 		fmt.Println("Marie has boarded the bus.")
 	}
+
+	bus := Bus{frontseatPassenger: casey}
+	fmt.Println(bus.frontseatPassenger.Name, "is the front seat passenger.")
 }
