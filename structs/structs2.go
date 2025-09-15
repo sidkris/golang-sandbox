@@ -13,8 +13,20 @@ type Bus struct {
 }
 
 func main() {
-	casey := Passenger{Name: "Casey", TicketNumber: 1, Boarded: false}
-	bill := Passenger{Name: "Bill", TicketNumber: 2, Boarded: true}
+	casey := Passenger{Name: "Casey", TicketNumber: 1, Boarded: true}
+	bill := Passenger{Name: "Bill", TicketNumber: 2, Boarded: false}
 	marie := Passenger{Name: "Marie", TicketNumber: 3, Boarded: false}
 	fmt.Println(casey, bill, marie)
+
+	if casey.Boarded {
+		fmt.Println("Casey has boarded the bus.")
+	}
+
+	if bill.Boarded {
+		fmt.Println("Bill has boarded the bus.")
+	}
+
+	if marie.Boarded {
+		fmt.Println("Marie has boarded the bus.")
+	}
 }
