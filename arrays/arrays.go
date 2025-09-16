@@ -1,0 +1,1 @@
+// arrays in golang are to store multiple pieces od the SAME KIND of data
